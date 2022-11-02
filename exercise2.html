@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+    <script>
+    $(document).ready(function(){
+        $(".div1").append('<div class="content">Welcome BROS!!!</div>');
+        $(".div2").click(function(){
+            $(".div2").css("background","yellow");
+        });
+        $(".div3").click(function(){
+            $(".div3").css("background","yellow");
+        });
+        $("#hide").click(function(){
+            $(".div4").hide();
+        });
+        $("#show").click(function(){
+            $(".div4").show();
+        });
+        $("#button3").click(function(){
+            $("#toggle").toggle();
+        });
+        $("#name").click(function(){
+            $(".div5").append('<div class="content">Usman</div>');
+        });
+    });    
+    </script>
+    </head>
+    <body>
+        <div class="div1">
+        </div>
+        <div class="div2"><p>click for yellow colour</p>
+        </div>
+        <div class="div3"><p>click for yellow colour</p>
+        </div>
+        <div class="div4"><p>click on hide button  to hide this message</p>
+        </div>
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+        <p id="toggle">Hi bros how are you doing.</p>
+        <button id="button3">Hide and Show</button>
+        <br style="line-height: 20;">
+        <br>
+        <button id="name">Show name</button>
+        <div class="div5">
+        </div>
+
+
+    </body>
+</html>
